@@ -1,0 +1,55 @@
+{
+  "name": "@luzat/listify",
+  "description": "Reads a CSV with songs and imports them into Spotify",
+  "version": "1.0.0",
+  "author": {
+    "name": "Thomas Luzat",
+    "email": "thomas@luzat.com",
+    "url": "https://luzat.com/"
+  },
+  "repository": "luzat/listify",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "fix": "eslint --cache --fix . && prettier --write '**/*.md'",
+    "lint": "eslint --cache . && prettier --list-different '**/*.md'",
+    "lint:check-config": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "start": "node bin/listify.js"
+  },
+  "bin": {
+    "listify": "bin/listify.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "configstore": "^4.0.0",
+    "csv-parse": "^3.1.3",
+    "csv-stringify": "^4.3.1",
+    "inquirer": "^6.2.0",
+    "koa": "^2.6.1",
+    "koa-router": "^7.4.0",
+    "opn": "^5.4.0",
+    "spotify-web-api-node": "^4.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.14.3"
+  },
+  "files": [
+    "bin",
+    "demo.csv",
+    "demo.svg",
+    "lib"
+  ]
+}
