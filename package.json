@@ -33,6 +33,7 @@
     "koa-router": "^7.4.0",
     "opn": "^5.4.0",
     "spotify-web-api-node": "^4.0.0",
+    "text-table": "^0.2.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
