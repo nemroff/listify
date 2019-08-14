@@ -32,3 +32,8 @@ node_modules
 .eslintcache
 npm-debug.log*
 package-lock.json
+
+# Testing Files
+/input
+/output
+ExampleCMD.sh
